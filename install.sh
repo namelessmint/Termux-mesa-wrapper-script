@@ -11,11 +11,12 @@ wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/downloa
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/test.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
 mv start.sh .start.sh
-tar -xf wine_hangover_9.22_bionic_build_patched.tar.xz
+mv wine_hangover_* wine_hangover.tar.xz
+tar -xf wine_hangover.tar.xz
 dpkg -i ./mesa.deb
-rm wine_hangover_9.22_bionic_build_patched.tar.xz
+rm wine_hangover.tar.xz
 rm mesa.deb
-echo "printf '\n Digite `win` para iniciar o wine \n'" >> .bashrc
+echo "printf '\n Digite win para iniciar o wine \n'" >> .bashrc
 echo "alias win='~/.start.sh'" >> .bashrc
 chmod +x .start.sh
 chmod +x test.sh
