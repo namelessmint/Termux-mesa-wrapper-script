@@ -14,6 +14,6 @@ wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/downloa
 tar -xf wine_hangover_9.22_bionic_build_patched.tar.xz
 dpkg -i ./mesa.deb
 rm wine_hangover_9.22_bionic_build_patched.tar.xz
-rm mesa.deb
+rm Mesa.atualizado.deb
 clear
 printf "complete installation \n"
