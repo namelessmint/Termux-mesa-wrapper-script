@@ -12,7 +12,7 @@ pkg install freetype git gnutls libandroid-shmem-static libx11 xorgproto libdrm 
 wget https://github.com/alexvorxx/hangover-termux/releases/download/9.22/wine_hangover_9.22_bionic_build_patched.tar.xz
 wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/Arquivos/Mesa.atualizado.deb
 tar -xf wine_hangover_9.22_bionic_build_patched.tar.xz
-dpkg -i ./mesa.deb
+dpkg -i ./Mesa.atualizado.deb
 rm wine_hangover_9.22_bionic_build_patched.tar.xz
 rm Mesa.atualizado.deb
 clear
