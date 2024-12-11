@@ -7,6 +7,7 @@ export DISPLAY=:0
 
 export VK_ICD_FILENAMES=$PREFIX/share/vulkan/icd.d/wrapper_icd.aarch64.json
 export MESA_VK_WSI_PRESENT_MODE=mailbox
+export GALLIUM_DRIVER=zink
 export MESA_LOADER_DRIVER_OVERRIDE=zink
 export MESA_NO_ERROR=1
 export MESA_DEBUG=0
