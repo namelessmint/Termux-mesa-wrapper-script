@@ -19,9 +19,9 @@ tar -xf wine_hangover.tar.xz
 dpkg -i ./mesa.deb
 rm wine_hangover.tar.xz
 rm mesa.deb
-echo "printf '\n Digite updatem para atualizar o mesa e win para iniciar o wine \n'" >> .bashrc
+echo "printf '\n Digite update-mesa para atualizar o mesa e win para iniciar o wine \n'" >> .bashrc
 echo "alias win='~/.start.sh'" >> .bashrc
-echo "alias updatem='~/.update.sh'" >> .bashrc
+echo "alias update-mesa='~/.update.sh'" >> .bashrc
 chmod +x .*.sh *.sh
 clear
 printf "complete installation, reboot termux\n"
