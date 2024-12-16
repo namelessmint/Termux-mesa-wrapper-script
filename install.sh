@@ -10,15 +10,20 @@ wget https://github.com/alexvorxx/hangover-termux/releases/download/9.22/wine_ha
 wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/Arquivos/mesa.deb
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/test.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
+wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/update.sh
+mkdir .update
+mv update.sh .update.sh
 mv start.sh .start.sh
 mv wine_hangover_* wine_hangover.tar.xz
 tar -xf wine_hangover.tar.xz
 dpkg -i ./mesa.deb
 rm wine_hangover.tar.xz
 rm mesa.deb
-echo "printf '\n Digite win para iniciar o wine \n'" >> .bashrc
+echo "printf '\n Digite updatem para atualizar o mesa e win para iniciar o wine \n'" >> .bashrc
 echo "alias win='~/.start.sh'" >> .bashrc
+echo "alias updatem='~/.update.sh'" >> .bashrc
 chmod +x .start.sh
+chmod +x .update.sh
 chmod +x test.sh
 clear
 printf "complete installation, reboot termux\n"
