@@ -22,6 +22,6 @@ rm mesa.deb
 echo "printf '\n Digite updatem para atualizar o mesa e win para iniciar o wine \n'" >> .bashrc
 echo "alias win='~/.start.sh'" >> .bashrc
 echo "alias updatem='~/.update.sh'" >> .bashrc
-chmod +x *.sh
+chmod +x .*.sh *.sh
 clear
 printf "complete installation, reboot termux\n"
