@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ ! -d /data/data/com.termux/files/home/storage ]; then
+    echo "Por favor, configure o armazenamento usando 'termux-setup-storage' antes de executar este script."
+    exit 1
+fi
 cd ~
 pkg update && pkg upgrade -y
 pkg install tur-repo x11-repo -y
@@ -11,17 +15,16 @@ wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/downloa
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/test.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/update.sh
-mkdir .update
-mv update.sh .update.sh
-mv start.sh .start.sh
+mkdir .update .script
+mv update.sh .script/.update.sh
+mv start.sh .script/.start.sh
 mv wine_hangover_* wine_hangover.tar.xz
 tar -xf wine_hangover.tar.xz
 dpkg -i ./mesa.deb
-rm wine_hangover.tar.xz
-rm mesa.deb
+rm wine_hangover.tar.xz mesa.deb
 echo "printf '\n Digite update-mesa para atualizar o mesa e win para iniciar o wine \n'" >> .bashrc
-echo "alias win='~/.start.sh'" >> .bashrc
-echo "alias update-mesa='~/.update.sh'" >> .bashrc
-chmod +x .*.sh *.sh
+echo "alias win='~/.script/.start.sh'" >> .bashrc
+echo "alias update-mesa='~/.script/.update.sh'" >> .bashrc
+chmod +x .script/.*.sh *.sh
 clear
 printf "complete installation, reboot termux\n"
