@@ -15,13 +15,15 @@ wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/downloa
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/test.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/update.sh
-mkdir .update .script
+wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/Arquivos3/script.zip
+mkdir .update .script /sdcard/Download/scriptDown/
+unzip script.zip -d /sdcard/Download/scriptDown/ 
 mv update.sh .script/.update.sh
 mv start.sh .script/.start.sh
 mv wine_hangover_* wine_hangover.tar.xz
 tar -xf wine_hangover.tar.xz
 dpkg -i ./mesa.deb
-rm wine_hangover.tar.xz mesa.deb
+rm wine_hangover.tar.xz mesa.deb script.zip
 echo "printf '\n Digite update-mesa para atualizar o mesa e win para iniciar o wine \n'" >> .bashrc
 echo "alias win='~/.script/.start.sh'" >> .bashrc
 echo "alias update-mesa='~/.script/.update.sh'" >> .bashrc
