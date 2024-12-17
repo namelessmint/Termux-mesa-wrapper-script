@@ -18,7 +18,7 @@ Este repositório contém um script básico para a instalação do **Wine** e do
 
 Este projeto só foi possível graças aos seguintes trabalhos e contribuições:
 
-- [alexvorxx](https://github.com/alexvorxx) pelo **Wine Hangover for Termux**.
-- [xMeM](https://github.com/xMeM) pelo **mesa-vulkan-icd-wrapper**.
-- O vídeo tutorial do **K1RA**.
+- **[alexvorxx](https://github.com/alexvorxx)** pelo Wine Hangover for Termux.
+- **[xMeM](https://github.com/xMeM)** pelo mesa-vulkan-icd-wrapper.
+- **[K1RA](https://www.youtube.com/@K1RA2077)** pelo [vídeo](https://youtu.be/4XK1plr2tbc?si=yJoSpHXF6u4nG-O_)
 
