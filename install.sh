@@ -33,7 +33,7 @@ dpkg -i ./mesaup.deb
 wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/Arquivos3/script.zip
 unzip script.zip -d /sdcard/Download/DXVK-3DTESTE/ -y
 
-rm wine_hangover.tar.xz mesa.deb script.zip
+rm wine_hangover.tar.xz *.deb script.zip
 
 echo "printf '\n Digite update-mesa para atualizar o mesa e win para iniciar o wine \n'" >> .bashrc
 
