@@ -28,7 +28,7 @@ wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/downloa
 dpkg -i ./mesaup.deb
 
 wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/Arquivos3/script.zip
-unzip script.zip -d /sdcard/Download/DXVK-3DTESTE/
+unzip script.zip -d /sdcard/Download/DXVK-3DTESTE/ -y
 
 rm wine_hangover.tar.xz mesa.deb script.zip
 
