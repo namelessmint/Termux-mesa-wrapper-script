@@ -17,11 +17,13 @@ mkdir .update .script /sdcard/Download/DXVK-3DTESTE/
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/test.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/update.sh
+mv test.sh .script/.test.sh
+echo "alias 3d-teste='~/.script/.test.sh'" >> .bashrc
 mv update.sh .script/.update.sh
 echo "alias update-mesa='~/.script/.update.sh'" >> .bashrc
 mv start.sh .script/.start.sh
-echo "alias win='~/.script/.start.sh'" >> .bashrc
-chmod +x .script/.*.sh *.sh
+echo "alias pc-emu='~/.script/.start.sh'" >> .bashrc
+chmod +x .script/.*.sh
 
 wget https://github.com/alexvorxx/hangover-termux/releases/download/9.22/wine_hangover_9.22_bionic_build_patched.tar.xz
 mv wine_hangover_* wine_hangover.tar.xz
@@ -35,7 +37,7 @@ unzip script.zip -d /sdcard/Download/DXVK-3DTESTE/ -y
 
 rm wine_hangover.tar.xz *.deb script.zip
 
-echo "printf '\n Digite update-mesa para atualizar o mesa e win para iniciar o wine \n'" >> .bashrc
+echo "printf '\n Digite update-mesa para atualizar o mesa e pc-emu para iniciar o wine \n'" >> .bashrc
 
 ln -s /sdcard/Download/ Downloads
 
