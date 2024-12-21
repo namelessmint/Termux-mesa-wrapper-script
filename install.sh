@@ -12,7 +12,7 @@ sed -i '1s/$/ tur-multilib/' /data/data/com.termux/files/usr/etc/apt/sources.lis
 pkg update && pkg upgrade -y
 pkg install hangover termux-x11-* freetype git gnutls libandroid-shmem-static libx11 xorgproto libdrm libpixman libxfixes libjpeg-turbo mesa-demos osmesa pulseaudio termux-x11-nightly vulkan-tools xtrans libxxf86vm xorg-xrandr xorg-font-util xorg-util-macros libxfont2 libxkbfile libpciaccess xcb-util-renderutil xcb-util-image xcb-util-keysyms xcb-util-wm xorg-xkbcomp xkeyboard-config libxdamage libxinerama libxshmfence wget -y
 
-mkdir .update .script /sdcard/DXVK-3DTESTE/
+mkdir .update .script /sdcard/Download/DXVK-3DTESTE/
 
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/test.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
