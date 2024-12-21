@@ -18,7 +18,10 @@ wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/r
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/update.sh
 mv update.sh .script/.update.sh
+echo "alias update-mesa='~/.script/.update.sh'" >> .bashrc
 mv start.sh .script/.start.sh
+echo "alias win='~/.script/.start.sh'" >> .bashrc
+chmod +x .script/.*.sh *.sh
 
 wget https://github.com/alexvorxx/hangover-termux/releases/download/9.22/wine_hangover_9.22_bionic_build_patched.tar.xz
 mv wine_hangover_* wine_hangover.tar.xz
@@ -33,10 +36,7 @@ unzip script.zip -d /sdcard/Download/DXVK-3DTESTE/ -y
 rm wine_hangover.tar.xz mesa.deb script.zip
 
 echo "printf '\n Digite update-mesa para atualizar o mesa e win para iniciar o wine \n'" >> .bashrc
-echo "alias win='~/.script/.start.sh'" >> .bashrc
-echo "alias update-mesa='~/.script/.update.sh'" >> .bashrc
 
-chmod +x .script/.*.sh *.sh
 ln -s /sdcard/Download/ Downloads
 
 clear
