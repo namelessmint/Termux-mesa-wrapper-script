@@ -25,12 +25,12 @@ mv start.sh .script/.start.sh
 echo "alias pc-emu='~/.script/.start.sh'" >> .bashrc
 chmod +x .script/.*.sh
 
+wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/16%2F12/mesaup.deb
+dpkg -i ./mesaup.deb
+
 wget https://github.com/alexvorxx/hangover-termux/releases/download/9.22/wine_hangover_9.22_bionic_build_patched.tar.xz
 mv wine_hangover_* wine_hangover.tar.xz
 tar -xf wine_hangover.tar.xz
-
-wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/16%2F12/mesaup.deb
-dpkg -i ./mesaup.deb
 
 wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/Arquivos3/script.zip
 unzip script.zip -d /sdcard/Download/DXVK-3DTESTE/
