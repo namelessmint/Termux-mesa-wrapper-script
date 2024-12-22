@@ -33,7 +33,7 @@ mv wine_hangover_* wine_hangover.tar.xz
 tar -xf wine_hangover.tar.xz
 
 wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/Arquivos3/script.zip
-unzip script.zip -d /sdcard/Download/DXVK-3DTESTE/
+unzip -o script.zip -d /sdcard/Download/DXVK-3DTESTE/
 
 rm wine_hangover.tar.xz *.deb script.zip
 
