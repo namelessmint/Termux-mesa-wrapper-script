@@ -12,7 +12,7 @@ sed -i '1s/$/ tur-multilib/' /data/data/com.termux/files/usr/etc/apt/sources.lis
 pkg update && pkg upgrade -y
 pkg install hangover termux-x11-* freetype git gnutls libandroid-shmem-static libx11 xorgproto libdrm libpixman libxfixes libjpeg-turbo mesa-demos osmesa-zink mesa-zink pulseaudio termux-x11-nightly vulkan-tools xtrans libxxf86vm xorg-xrandr xorg-font-util xorg-util-macros libxfont2 libxkbfile libpciaccess xcb-util-renderutil xcb-util-image xcb-util-keysyms xcb-util-wm xorg-xkbcomp xkeyboard-config libxdamage libxinerama libxshmfence wget -y
 
-mkdir .update .script /sdcard/Download/DXVK-3DTESTE/
+mkdir .install .update .script /sdcard/Download/DXVK-3DTESTE/
 
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/test.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
@@ -25,8 +25,8 @@ mv start.sh .script/.start.sh
 echo "alias pc-emu='~/.script/.start.sh'" >> .bashrc
 chmod +x .script/.*.sh
 
-wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/16%2F12/mesaup.deb
-dpkg -i ./mesaup.deb
+wget https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/16%2F12/mesaup.deb -o .install/mesa.deb
+dpkg -i ./.install/*.deb
 
 wget https://github.com/alexvorxx/hangover-termux/releases/download/9.22/wine_hangover_9.22_bionic_build_patched.tar.xz
 mv wine_hangover_* wine_hangover.tar.xz
