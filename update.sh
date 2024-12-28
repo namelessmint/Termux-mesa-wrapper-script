@@ -1,6 +1,9 @@
 #!/bin/bash                                          
-cd ~/.update                                         
+cd ~/.update     
+
 clear
+
+
 echo "Escolha a versão do Mesa para instalar:"
 echo "1. Versão para Xclipe e Adreno (24.2.5-12)"
 echo "2. Versão mais recente (24.3.1-3)"
@@ -47,4 +50,4 @@ case $escolha in
 esac
 
 clear
-echo "Mesa foi atualizado!"
+echo "O Mesa foi atualizado!"
