@@ -40,4 +40,4 @@ echo "printf '\n Use o comando mesa-update para atualizar o Mesa e pc-emu para i
 ln -s /sdcard/Download/ Downloads
 
 clear
-printf "Complete installation, reboot termux\n"
+printf "Instalação Concluída, Reinicie o Termux para continuar\n"
