@@ -2,9 +2,9 @@
 cd ~/.update                                         
 clear
 echo "Escolha a versão do Mesa para instalar:"
-echo "1. Versão para Xclipe e Adreno"
+echo "1. Versão para Xclipe e Adreno (24.2.5-12)"
 echo "2. Versão mais recente (24.3.1-3)"
-echo "3. Versão para Mali"
+echo "3. Versão para Mali (24.2.5-9)"
 echo "4. Sair"
 read -p "Digite o número da sua escolha: " escolha
 
