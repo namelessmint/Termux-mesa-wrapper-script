@@ -18,7 +18,6 @@ wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/r
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
 mv test.sh .script/.test.sh
 echo "alias 3d-teste='~/.script/.test.sh'" >> .bashrc
-mv update.sh .script/.update.sh
 echo "alias mesa-update='bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/update.sh)
 '" >> .bashrc
 mv start.sh .script/.start.sh
