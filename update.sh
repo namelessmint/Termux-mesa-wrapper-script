@@ -18,7 +18,7 @@ instalar_mesa() {
     local url=$1
     local mesadeb=${url##*/}
 
-    wget -q $url -O $mesadeb
+    wget $url -O $mesadeb
     chmod +x $mesadeb
 
     if [[ $mesadeb == *.deb ]]; then
