@@ -16,11 +16,11 @@ mkdir .install .update .script /sdcard/Download/DXVK-3DTESTE/
 
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/test.sh
 wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
-wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/update.sh
 mv test.sh .script/.test.sh
 echo "alias 3d-teste='~/.script/.test.sh'" >> .bashrc
 mv update.sh .script/.update.sh
-echo "alias mesa-update'~/.script/.update.sh'" >> .bashrc
+echo "alias mesa-update='bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/update.sh)
+'" >> .bashrc
 mv start.sh .script/.start.sh
 echo "alias pc-emu='~/.script/.start.sh'" >> .bashrc
 chmod +x .script/.*.sh
