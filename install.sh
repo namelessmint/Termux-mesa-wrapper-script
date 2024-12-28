@@ -35,7 +35,7 @@ unzip -o script.zip -d /sdcard/Download/DXVK-3DTESTE/
 
 rm -r .install/ wine_hangover.tar.xz  script.zip
 
-echo "printf '\n Digite update-mesa para atualizar o mesa e pc-emu para iniciar o wine \n'" >> .bashrc
+echo "printf '\n Use o comando mesa-update para atualizar o Mesa e pc-emu para iniciar o Wine. \n'" >> .bashrc
 
 ln -s /sdcard/Download/ Downloads
 
