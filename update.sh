@@ -19,7 +19,6 @@ instalar_mesa() {
     local url=$1
     local arquivo=${url##*/}
 
-    echo "Baixando $arquivo..."
     wget -q $url -O $arquivo
     chmod +x $arquivo
 
