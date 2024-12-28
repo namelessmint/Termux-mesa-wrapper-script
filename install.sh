@@ -20,7 +20,7 @@ wget https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/r
 mv test.sh .script/.test.sh
 echo "alias 3d-teste='~/.script/.test.sh'" >> .bashrc
 mv update.sh .script/.update.sh
-echo "alias update-mesa='~/.script/.update.sh'" >> .bashrc
+echo "alias mesa-update'~/.script/.update.sh'" >> .bashrc
 mv start.sh .script/.start.sh
 echo "alias pc-emu='~/.script/.start.sh'" >> .bashrc
 chmod +x .script/.*.sh
