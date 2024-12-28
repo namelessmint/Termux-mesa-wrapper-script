@@ -16,14 +16,14 @@ URL_MALI="https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/do
 
 instalar_mesa() {
     local url=$1
-    local arquivo=${url##*/}
+    local mesadeb=${url##*/}
 
-    wget -q $url -O $arquivo
-    chmod +x $arquivo
+    wget -q $url -O $mesadeb
+    chmod +x $mesadeb
 
-    if [[ $arquivo == *.deb ]]; then
+    if [[ $mesadeb == *.deb ]]; then
         echo "Instalando o mesa..."
-        dpkg -i $arquivo
+        dpkg -i $mesadeb
         rm *.deb
     fi
 }
