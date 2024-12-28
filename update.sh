@@ -8,7 +8,7 @@ echo "1. Versão para Xclipe e Adreno (24.2.5-12)"
 echo "2. Versão mais recente (24.3.1-3)"
 echo "3. Versão para Mali (24.2.5-9)"
 echo "4. Cancelar instalação"
-read -p "Digite o número da sua escolha: " versao
+read -p "Escolha uma versão: " versao
 
 URL_XCLIPSE="https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/16%2F12/mesaup.deb"
 URL_BE="https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/Mesamali/mesa-vulkan-icd-wrapper_24.3.1-3_aarch64.deb"
