@@ -2,7 +2,7 @@
 
 clear
 
-pkg install hangover winetricks cabextract
+pkg install hangover winetricks cabextract -y
 mkdir /sdcard/Download/DXVK-3DTESTE/
 clear
 
