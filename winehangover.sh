@@ -3,6 +3,7 @@
 clear
 
 pkg install hangover winetricks cabextract
+mkdir /sdcard/Download/DXVK-3DTESTE/
 
 echo "Baixando e configurando a Wine Hangover"
 wget -q https://github.com/alexvorxx/hangover-termux/releases/download/9.22/wine_hangover_9.22_bionic_build_patched.tar.xz
