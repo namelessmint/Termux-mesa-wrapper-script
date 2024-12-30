@@ -30,6 +30,6 @@ mv start.sh .script/.start.sh
 echo "alias pc-emu='~/.script/.start.sh'" >> .bashrc
 chmod +x .script/.start.sh
 
-echo "printf 'Use o comando pc-emu para iniciar o Wine. \n'" >> .bashrc
+echo "printf '\n Use o comando pc-emu para iniciar o Wine. \n'" >> .bashrc
 
 clear
