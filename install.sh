@@ -15,7 +15,7 @@ mkdir .install .update .script
 clear
 
 echo "Baixando e configurando scripts Adicionais"
-wget -q https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/test.sh
+wget -q https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/aux/test.sh
 mv test.sh .script/.test.sh
 echo "alias 3d-teste='~/.script/.test.sh'" >> .bashrc
 echo "alias mesa-update='bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/update.sh)'" >> .bashrc
@@ -33,7 +33,7 @@ echo "printf '\n Use o comando mesa-update para atualizar o Mesa.'" >> .bashrc
 
 ln -s /sdcard/Download/ Downloads
 
-bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/winehangover.sh)
+bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/apps/install/winehangover.sh)
 
 clear
 printf "Instalação Concluída, Reinicie o Termux para continuar\n"
