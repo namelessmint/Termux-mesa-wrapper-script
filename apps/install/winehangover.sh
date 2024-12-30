@@ -25,10 +25,9 @@ echo "Limpamdo arquivos temporarios"
 rm  wine_hangover.tar.xz  script.zip
 
 echo "Baixando e configurando script Adicional"
-wget -q https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/start.sh
-mv start.sh .script/.start.sh
-echo "alias pc-emu='~/.script/.start.sh'" >> .bashrc
-chmod +x .script/.start.sh
+wget -q -O .script/wine.sh https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/wine.sh
+echo "alias pc-emu='~/.script/wine.sh'" >> .bashrc
+chmod +x .script/wine.sh
 
 echo "printf '\n Use o comando pc-emu para iniciar o Wine. \n'" >> .bashrc
 
