@@ -29,7 +29,7 @@ clear
 echo "Limpamdo arquivos temporarios"
 rm -r .install/
 
-echo "printf '\n Use o comando mesa-update para atualizar o Mesa. \n'" >> .bashrc
+echo "printf '\n Use o comando mesa-update para atualizar o Mesa.'" >> .bashrc
 
 ln -s /sdcard/Download/ Downloads
 
