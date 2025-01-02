@@ -21,13 +21,11 @@ mv test.sh .script/.test.sh
 echo "alias 3d-teste='~/.script/.test.sh'" >> .bashrc
 echo "alias mesa-update='bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/aux/update.sh)'" >> .bashrc
 chmod +x .script/.*.sh
-
+clear
 
 echo "printf '\n Use o comando mesa-update para atualizar o Mesa.'" >> .bashrc
 
 ln -s /sdcard/Download/ Downloads
-
-clear
 
 install_winehangover() {
     echo "Instalando Wine Hangover..."
