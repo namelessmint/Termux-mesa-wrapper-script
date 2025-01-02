@@ -1,6 +1,11 @@
 # Termux Mesa Wrapper Script
 
-Este repositório contém um script básico para a instalação do **Wine** e do **Mesa** com suporte a drivers nativos através do Termux.
+Este repositório contém um script básico para a instalação do **Mesa** com suporte a drivers nativos através do Termux.
+
+aplicações opcionais para instalação: 
+**Wine hangover**
+**RPCS3**
+**XEMU**
 
 ## Como Usar
 
@@ -17,6 +22,9 @@ Este repositório contém um script básico para a instalação do **Wine** e do
 ## Agradecimentos
 
 Este projeto só foi possível graças aos seguintes trabalhos e contribuições:
+
+- **[George-Seven](https://github.com/George-Seven/Termux-XEMU)** pelo port do XEMU
+- **[daviDarthemis](https://github.com/daviDarthemis/acclan/)**, e **[pablo micewine](https://github.com/KreitinnSoftware/MiceWine)** pelo port do RPCS3.
 
 - **[alexvorxx](https://github.com/alexvorxx)** pelo Wine Hangover for Termux.
 - **[xMeM](https://github.com/xMeM)** pelo mesa-vulkan-icd-wrapper.
