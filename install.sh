@@ -37,7 +37,7 @@ install_rpcs3() {
     echo "Instalando RPCS3..."
     wget -q -O .install/install https://github.com/daviDarthemis/acclan/releases/download/000.01.10/install
     chmod +x .install/install
-    .install/install
+    .install/install -y
     echo " printf 'Digite olympus para iniciar o RPCS3. \n'" >> .bashrc
     echo "RPCS3 instalado com sucesso!"
 }
