@@ -27,6 +27,8 @@ echo "printf '\n Use o comando mesa-update para atualizar o Mesa.'" >> .bashrc
 
 ln -s /sdcard/Download/ Downloads
 
+clear
+
 install_winehangover() {
     echo "Instalando Wine Hangover..."
     bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/apps/install/winehangover.sh)
