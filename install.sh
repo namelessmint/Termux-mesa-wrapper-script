@@ -48,6 +48,7 @@ install_xemu() {
     apt install ./.install/xemu-arm64.deb openbox -y
     wget -q -O .script/xemu.sh https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/apps/start/xemustart.sh
     echo "alias xemu-init='~/.script/xemu.sh'" >> .bashrc
+    chmod +x .script/xemu.sh
     echo " printf 'Digite xemu-init para iniciar o Xemu. \n'" >> .bashrc
     echo "XEMU instalado com sucesso!"
 }
