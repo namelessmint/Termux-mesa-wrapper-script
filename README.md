@@ -3,9 +3,9 @@
 Este repositório contém um script básico para a instalação do **Mesa** com suporte a drivers nativos através do Termux.
 
 aplicações opcionais para instalação: 
-**Wine hangover**
-**RPCS3**
-**XEMU**
+- **Wine hangover**
+- **RPCS3**
+- **XEMU**
 
 ## Como Usar
 
