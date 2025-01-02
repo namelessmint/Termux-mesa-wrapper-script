@@ -39,7 +39,6 @@ install_rpcs3() {
     chmod +x .install/install
     .install/install
     echo " printf 'Digite olympus para iniciar o RPCS3. \n'" >> .bashrc
-
     echo "RPCS3 instalado com sucesso!"
 }
 
@@ -47,6 +46,9 @@ install_xemu() {
     echo "Instalando XEMU..."
     wget -q -O .install/xemu-arm64.deb "https://github.com/George-Seven/Termux-XEMU/releases/latest/download/xemu-arm64.deb"
     apt install ./.install/xemu-arm64.deb openbox -y
+    wget -q -O .script/xemu.sh https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/apps/start/xemustart.sh
+    echo "alias xemu-init='~/.script/xemu.sh'" >> .bashrc
+    echo " printf 'Digite xemu-init para iniciar o Xemu. \n'" >> .bashrc
     echo "XEMU instalado com sucesso!"
 }
 
