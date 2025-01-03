@@ -12,7 +12,7 @@ mv wine_hangover_* wine_hangover.tar.xz
 echo "Extraindo a Wine Hangover"
 tar -xf wine_hangover.tar.xz
 WINEPREFIX=~/.wine64
-winetricks dxvk vcrun2019 dotnet40
+winetricks dxvk
 clear
 
 echo "Baixando Arquivos Adicionais"
