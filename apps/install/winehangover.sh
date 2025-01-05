@@ -12,7 +12,7 @@ mv wine_hangover_* wine_hangover.tar.xz
 echo "Extraindo a Wine Hangover"
 tar -xf wine_hangover.tar.xz
 WINEPREFIX=~/.wine64
-winetricks dxvk vkd3d
+winetricks win10 dxvk vkd3d
 clear
 
 echo "Baixando Arquivos Adicionais"
