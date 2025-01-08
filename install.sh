@@ -38,7 +38,7 @@ install_rpcs3() {
     wget -q -O .install/install https://github.com/daviDarthemis/acclan/releases/download/000.01.10/install
     chmod +x .install/install
     .install/install -y
-    echo " printf 'Digite olympus para iniciar o RPCS3. \n'" >> .bashrc
+    echo " printf ' Digite olympus para iniciar o RPCS3. \n'" >> .bashrc
     echo "RPCS3 instalado com sucesso!"
 }
 
@@ -49,7 +49,7 @@ install_xemu() {
     wget -q -O .script/xemu.sh https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/apps/start/xemustart.sh
     echo "alias xemu-init='~/.script/xemu.sh'" >> .bashrc
     chmod +x .script/xemu.sh
-    echo " printf 'Digite xemu-init para iniciar o Xemu. \n'" >> .bashrc
+    echo " printf ' Digite xemu-init para iniciar o Xemu. \n'" >> .bashrc
     echo "XEMU instalado com sucesso!"
 }
 
