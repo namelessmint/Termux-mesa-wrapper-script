@@ -45,8 +45,8 @@ install_rpcs3() {
 
 install_xemu() {
     echo "Instalando XEMU..."
-    wget -q -O .install/xemu-arm64.deb "https://github.com/George-Seven/Termux-XEMU/releases/latest/download/xemu-arm64.deb"
-    apt install ./.install/xemu-arm64.deb openbox -y
+    wget -O xemu.deb "https://github.com/George-Seven/Termux-XEMU/releases/latest/download/xemu-$(uname -m).deb" && \
+    apt install -y ./xemu.deb openbox -y
     wget -q -O .script/xemu.sh https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/apps/start/xemustart.sh
     echo "alias xemu-init='~/.script/xemu.sh'" >> .bashrc
     chmod +x .script/xemu.sh
