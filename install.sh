@@ -85,10 +85,14 @@ case $choice in
     5)
         echo "Saindo..."
         exit 0
+        echo "Limpamdo arquivos temporarios..."
+        rm -r .install/
         ;;
     *)
         echo "Opção inválida. Saindo..."
         exit 1
+        echo "Limpamdo arquivos temporarios..."
+        rm -r .install/
         ;;
 esac
 
