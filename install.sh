@@ -23,6 +23,10 @@ echo "alias 3d-teste='~/.script/.test.sh'" >> .bashrc
 echo "alias mesa-update='bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/aux/update.sh)'" >> .bashrc
 chmod +x .script/.*.sh
 clear
+echo "Instalando o Mesa..."
+wget -q https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/16%2F12/mesaup.deb -O .install/mesa.deb
+dpkg -i ./.install/*.deb &> /dev/null
+clear
 
 echo "printf '\n Use o comando mesa-update para atualizar o Mesa.'" >> .bashrc
 
@@ -88,9 +92,7 @@ case $choice in
         ;;
 esac
 
-echo "Instalando o Mesa..."
-wget -q https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/download/16%2F12/mesaup.deb -O .install/mesa.deb
-dpkg -i ./.install/*.deb &> /dev/null
+
 echo "Limpamdo arquivos temporarios..."
 rm -r .install/
 
