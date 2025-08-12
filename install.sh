@@ -7,7 +7,6 @@ fi
 
 cd ~
 pkg update && pkg upgrade -y
-dpkg --add-architecture arm64
 clear
 echo "Instalando Pacotes adicionais..."
 pkg install tur-repo x11-repo -y &> /dev/null
