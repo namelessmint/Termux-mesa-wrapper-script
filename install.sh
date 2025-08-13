@@ -82,16 +82,16 @@ case $choice in
         install_xemu
         ;;
     5)
+        echo "Limpamdo arquivos temporarios..."
+        rm -r .install/
         echo "Saindo..."
         exit 0
-        echo "Limpamdo arquivos temporarios..."
-        rm -r .install/
         ;;
     *)
-        echo "Opção inválida. Saindo..."
-        exit 1
         echo "Limpamdo arquivos temporarios..."
         rm -r .install/
+        echo "Opção inválida. Saindo..."
+        exit 1
         ;;
 esac
 
