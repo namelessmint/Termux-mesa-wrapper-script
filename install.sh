@@ -18,8 +18,8 @@ mkdir .install .update .script
 echo "Baixando e configurando scripts Adicionais..."
 wget -q https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/aux/test.sh
 mv test.sh .script/.test.sh
-echo "alias 3d-teste='~/.script/.test.sh'" >> .bashrc
-echo "alias mesa-update='bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/aux/update.sh)'" >> .bashrc
+echo "alias GPUteste='~/.script/.test.sh'" >> .bashrc
+echo "alias mesamod='bash <(curl -s https://raw.githubusercontent.com/namelessmint/Termux-mesa-wrapper-script/refs/heads/main/aux/update.sh)'" >> .bashrc
 chmod +x .script/.*.sh
 clear
 echo "Instalando o Mesa..."
@@ -27,7 +27,9 @@ wget -q https://github.com/namelessmint/Termux-mesa-wrapper-script/releases/down
 dpkg -i ./.install/*.deb &> /dev/null
 clear
 
-echo "printf '\n Use o comando mesa-update para atualizar o Mesa.'" >> .bashrc
+echo "clear" >> .bashrc
+echo "printf '\n Digite mesamod para alterar a versão do Mesa.'" >> .bashrc
+echo "printf '\n Digite GPUteste para testar a GPU. \n" >> .bashrc
 
 ln -s /sdcard/Download/ Downloads
 
