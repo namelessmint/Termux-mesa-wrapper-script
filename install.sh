@@ -29,7 +29,7 @@ clear
 
 echo "clear" >> .bashrc
 echo "printf '\n Digite mesamod para alterar a versão do Mesa.'" >> .bashrc
-echo "printf '\n Digite GPUteste para testar a GPU. \n" >> .bashrc
+echo "printf '\n Digite GPUteste para testar a GPU. \n'" >> .bashrc
 
 ln -s /sdcard/Download/ Downloads
 
